@@ -517,13 +517,13 @@ contract Kennel is Ownable, ReentrancyGuard {
         uint256 unlockTime;
     }
 
-    uint256 public ethFee = 0.00 ether;
+    uint256 public ethFee = 50 ether;
     // base 1000, 0.5% = value * 5 / 1000
-    uint256 public lpFeePercent = 0;
+    uint256 public lpFeePercent = 50;
     address payable public feeWithdrawalAddress;
 
     // for statistic
-    uint256 public totalEthFees = 0;
+    uint256 public totalEthFees = 50;
 
     uint256 public depositId;
     uint256[] public allDepositIds;
